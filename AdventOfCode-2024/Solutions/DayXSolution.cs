@@ -1,7 +1,7 @@
 namespace AdventOfCode
 {
     public class DayXSolution : IAdventOfCodeSolution
-    {
+        {
         private IList<string> lines = [];
 
         public void ParseInput(string input)
@@ -20,4 +20,5 @@ namespace AdventOfCode
             return "No solution yet (p2)";
         }
     }
+    
 }
