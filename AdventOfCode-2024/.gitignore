@@ -1,0 +1,72 @@
+# User-specific files
+*.rsuser
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# User-specific folders
+.vscode/
+
+# Logs
+*.log
+
+# Build results
+bin/
+obj/
+
+# Visual Studio working folder
+.vs/
+
+# Generated files
+*.g.*
+*.gen.cs
+
+# Backup & temporary files
+*.tmp
+*.bak
+*.old
+*.swp
+
+# Package directories
+**/node_modules/
+**/packages/
+
+# IDE-specific files
+.idea/
+*.ide.workspace
+
+# Dependency caches
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.cache
+
+# Rider files
+.idea/
+*.sln.iml
+
+# Local history
+.history/
+
+# Mac files
+.DS_Store
+
+# Files created by debugging
+*.tlog
+*.dmp
+*.iobj
+*.ipdb
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Files generated during runtime
+*.pidb
+*.pyc
+*.pyo
+*.log
+*.csproj.user
+*.docstates
