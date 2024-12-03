@@ -8,7 +8,7 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             // Modify the day number for each day's challenge
-            int day = 1;  // Change to the desired day
+            int day = 3;  // Change to the desired day
             var input = GetInput(day);
 
             Console.WriteLine($"Solving Advent of Code Day {day} challenge...");

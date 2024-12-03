@@ -9,8 +9,9 @@ namespace AdventOfCode
                 case 1:
                     return new Day1Solution();
                 case 2:
-                    //return new Day2Solution(); // You can implement this
-                // Add more cases for other days
+                    return new Day2Solution();
+                case 3:
+                    return new Day3Solution();
                 default:
                     throw new ArgumentException("Solution for the specified day is not implemented.");
             }
