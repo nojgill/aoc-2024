@@ -1,6 +1,6 @@
 namespace AdventOfCode
 {
-    public class DayXSolution : IAdventOfCodeSolution
+    public class Day5Solution : IAdventOfCodeSolution
     {
         private IList<string> lines = [];
 
