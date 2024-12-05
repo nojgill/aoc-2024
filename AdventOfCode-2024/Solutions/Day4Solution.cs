@@ -4,11 +4,11 @@ namespace AdventOfCode
     {
         private IList<string> lines = [];
 
-        private char[,] wordSearch;
+        private char[,]? wordSearch;
 
         public void ParseInput(string input)
         {
-            lines = input.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
+            lines = input.Split(['\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
 
             this.wordSearch = ConvertToCharArray(lines);
         }

@@ -6,7 +6,7 @@ namespace AdventOfCode
 
         public void ParseInput(string input)
         {
-            lines = input.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
+            lines = input.Split(['\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
 
         }
 
