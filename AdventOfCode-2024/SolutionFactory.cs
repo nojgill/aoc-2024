@@ -16,6 +16,8 @@ namespace AdventOfCode
                     return new Day4Solution();
                 case 5:
                     return new Day5Solution();
+                case 6:
+                    return new Day6Solution();
                 default:
                     throw new ArgumentException("Solution for the specified day is not implemented.");
             }

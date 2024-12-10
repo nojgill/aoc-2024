@@ -2,15 +2,14 @@ namespace AdventOfCode
 {
     public class Day5Solution : IAdventOfCodeSolution
     {
-        private IList<string> lines = [];
-        private IList<Tuple<int, int>> instructions = [];
+        private readonly IList<Tuple<int, int>> instructions = [];
 
-        private IList<IList<int>> updates = [];
-        private Queue<(IList<int> update, Tuple<int, int> rule)> updatesToReorder = [];
+        private readonly IList<IList<int>> updates = [];
+        private readonly Queue<(IList<int> update, Tuple<int, int> rule)> updatesToReorder = [];
 
         public void ParseInput(string input)
         {
-            lines = input.Split(['\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
+            var lines = input.Split(['\n', '\r'], StringSplitOptions.RemoveEmptyEntries).Where(line => !string.IsNullOrWhiteSpace(line)).ToArray();
 
             foreach (var line in lines)
             {
@@ -62,7 +61,7 @@ namespace AdventOfCode
             {
                 var (update, rule) = this.updatesToReorder.Dequeue();
 
-                var reordered = this.Reorder(update, rule);
+                var reordered = Reorder(update, rule);
 
                 var (isValid, brokenRule) = this.IsValidUpdate(reordered.update);
 
@@ -82,7 +81,7 @@ namespace AdventOfCode
             return $"{count}";
         }
 
-        private (IList<int> update, Tuple<int, int> rule) Reorder(IList<int> input, Tuple<int, int> rule)
+        private static (IList<int> update, Tuple<int, int> rule) Reorder(IList<int> input, Tuple<int, int> rule)
         {
             var leftIndex = input.IndexOf(rule.Item1);
             var rightIndex = input.IndexOf(rule.Item2);
